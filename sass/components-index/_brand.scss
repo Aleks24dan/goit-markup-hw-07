@@ -1,0 +1,83 @@
+.brand {
+  background-color: #ffffff;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.brand-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $color-h;
+  margin-bottom: 50px;
+}
+
+.brand-list {
+  display: flex;
+  margin-left: calc(-1 * $galery-item-gap);
+  justify-content: center;
+}
+.brand-item {
+  margin-left: 30px;
+  flex-basis: calc(100% / 6 - $galery-item-gap);
+  border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.brand-link {
+  display: flex;
+  min-height: 90px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.brand-link:hover,
+.brand-link:focus {
+  border: 1px solid #2196f3;
+}
+
+.brand-link:hover .brand-icon,
+.brand-link:focus .brand-icon {
+  fill: #2196f3;
+}
+
+.brand-icon {
+  fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.brand-icon-first {
+  width: 44px;
+  height: 50px;
+}
+
+.brand-icon-taglin {
+  width: 40px;
+  height: 52px;
+}
+
+.brand-icon-company {
+  width: 41px;
+  height: 42px;
+}
+
+.brand-icon-foster {
+  width: 79px;
+  height: 42px;
+}
+
+.brand-icon-brand {
+  width: 59px;
+  height: 47px;
+}
+
+.brand-icon-last {
+  width: 88px;
+  height: 45px;
+}
