@@ -1,10 +1,10 @@
-.brand {
+.Klients {
   background-color: #ffffff;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.brand-title {
+.Klients__title {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -12,72 +12,71 @@
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: $color-h;
+  color: var(--color-h);
   margin-bottom: 50px;
 }
 
-.brand-list {
+.brands {
   display: flex;
-  margin-left: calc(-1 * $galery-item-gap);
+  margin-left: calc(-1 * var(--gap30));
   justify-content: center;
 }
-.brand-item {
+
+.brands__item {
   margin-left: 30px;
-  flex-basis: calc(100% / 6 - $galery-item-gap);
+  flex-basis: calc(100% / 6 - var(--gap30));
   border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.brand-link {
+.brands__link {
   display: flex;
   min-height: 90px;
   justify-content: center;
   align-items: center;
   border: 1px solid #afb1b8;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  :focus {
+    border: 1px solid #2196f3;
+  }
 }
 
-.brand-link:hover,
-.brand-link:focus {
-  border: 1px solid #2196f3;
-}
-
-.brand-link:hover .brand-icon,
-.brand-link:focus .brand-icon {
-  fill: #2196f3;
-}
-
-.brand-icon {
+.brands__icon {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .brands__link:hover,
+  :focus& {
+    fill: #2196f3;
+  }
 }
 
-.brand-icon-first {
+.brands__icon--first {
   width: 44px;
   height: 50px;
 }
 
-.brand-icon-taglin {
+.brands__icon--taglin {
   width: 40px;
   height: 52px;
 }
 
-.brand-icon-company {
+.brands__icon--company {
   width: 41px;
   height: 42px;
 }
 
-.brand-icon-foster {
+.brands__icon--foster {
   width: 79px;
   height: 42px;
 }
 
-.brand-icon-brand {
+.brands__icon--brand {
   width: 59px;
   height: 47px;
 }
 
-.brand-icon-last {
+.brands__icon--last {
   width: 88px;
   height: 45px;
 }

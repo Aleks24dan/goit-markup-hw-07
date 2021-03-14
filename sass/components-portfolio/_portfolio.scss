@@ -1,5 +1,5 @@
-.portfolio {
-  background-color: $background-section;
+.portfolio-main {
+  background-color: var(--background-section);
   padding: 94px 0px 94px 0px;
   margin-top: 81px;
 }
@@ -7,21 +7,15 @@
 .portfolio-list {
   justify-content: center;
   display: flex;
-  margin-bottom: $gap50;
+  margin-bottom: var(--gap50);
 }
 
-.portfolio-item:not(:last-child) {
+.portfolio-list__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.portfolio-btn:hover,
-.portfolio-btn:focus {
-  color: $backgound-navigation;
-  background-color: $color-logo;
-}
-
-.portfolio-btn {
-  color: $color-h;
+.portfolio-list__btn {
+  color: var(--color-partfolio-btn);
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -37,4 +31,10 @@
   padding-left: 22px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-list__btn:hover,
+.portfolio-list__btn:focus {
+  color: var(--color-partfolio-btn-hover);
+  background-color: var(--color-partfolio-bg);
 }

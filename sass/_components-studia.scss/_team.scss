@@ -1,11 +1,11 @@
 .team {
-  background-color: $background-team;
+  background-color: var(--background-team);
   letter-spacing: 0.03em;
   line-height: 19px;
   padding-top: 94px;
   padding-bottom: 77px;
 }
-.team-tittle {
+.team__tittle {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -14,72 +14,70 @@
   margin-bottom: 67px;
 }
 
-.team-list {
+.swat {
   display: flex;
   flex-wrap: wrap;
-  margin-left: calc(-1 * 30px);
+  margin-left: calc(-1 * var(--gap30));
 }
 
-.team-item {
+.swat__item {
   margin-left: 30px;
   text-align: center;
-  background-color: $color-h1;
+  background-color: var(--swat-item-bg);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 30px;
-  flex-basis: calc(100% / 4 - $galery-item-gap);
+  flex-basis: calc(100% / 4 - var(--gap30));
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team-item img {
+.swat__img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-.team-item-tittle {
+.swat__tittle {
   font-weight: 500;
   margin-bottom: 10px;
   margin-top: 30px;
 }
 
-.team-item-text {
+.swat__text {
   font-size: 16px;
   margin-bottom: 16px;
 }
 
-.team-social-list {
+.social {
   display: flex;
   justify-content: center;
 }
 
-.team-social-list > .team-social-item:not(:last-child) {
+.social__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.team-social-icon {
+.social__icon {
   fill: #757575;
   width: 20px;
   height: 20px;
   margin-top: auto;
   margin-bottom: auto;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .social__link:hover,
+  :focus& {
+    fill: #ffffff;
+  }
 }
-.team-social-item a {
+.social__link {
   width: 44px;
   height: 44px;
   display: flex;
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 50%;
-}
-
-.team-social-item a:hover .team-social-icon,
-.team-social-item a:focus .team-social-icon {
-  fill: #ffffff;
-}
-
-.team-social-item a:hover,
-.team-social-item a:focus {
-  background-color: #2196f3;
+  &:hover,
+  :focus {
+    background-color: #2196f3;
+  }
 }

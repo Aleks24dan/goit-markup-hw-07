@@ -1,29 +1,32 @@
 .about {
   padding-bottom: 94px;
+  background-color: var(--bg-about);
 }
-.about-item > img {
+
+.doing-galery__img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-.about-tittle {
+.about__tittle {
   margin-bottom: 50px;
   text-align: center;
 }
 
-.about-list {
+.doing-galery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin-left: calc(-1 * var(--gap30));
 }
 
-.about-item {
+.doing-galery__item {
   position: relative;
-  flex-basis: calc(100% / 3 - $galery-item-gap);
+  margin-left: 30px;
+  flex-basis: calc(100% / 3 - var(--gap30));
 }
 
-.about-lable {
+.doing-galery__lable {
   position: absolute;
   bottom: 0;
   left: 0;
